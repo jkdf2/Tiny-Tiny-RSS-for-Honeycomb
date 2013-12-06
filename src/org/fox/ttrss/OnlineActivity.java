@@ -176,11 +176,11 @@ public class OnlineActivity extends CommonActivity {
 		if (isOffline) {
 			switchOfflineSuccess();			
 		} else {
-			
+			/*
 			if (!isAmazonDevice()) {
 				checkTrial(false);
 			}
-			
+			*/
 			/* if (getIntent().getExtras() != null) {
 				Intent i = getIntent();
 			} */
@@ -469,7 +469,7 @@ public class OnlineActivity extends CommonActivity {
 		
 		finish();
 	}
-	
+	/*
 	public void checkTrial(boolean notify) {
 		boolean isTrial = getPackageManager().checkSignatures(
 				getPackageName(), "org.fox.ttrss.key") != PackageManager.SIGNATURE_MATCH;
@@ -527,7 +527,7 @@ public class OnlineActivity extends CommonActivity {
 			//toast(R.string.trial_thanks);
 		}
 	}
-	
+	*/
 	private void openUnlockUrl() {
 		try {
 			Intent intent = new Intent(Intent.ACTION_VIEW, 

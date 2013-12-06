@@ -133,7 +133,7 @@ public class FeedsActivity extends OnlineActivity implements HeadlinesEventListe
 				
 			if (!isAmazonDevice()) {
 				AppRater.appLaunched(this);
-				checkTrial(true);
+			//	checkTrial(true);
 			}
 
 		} else { // savedInstanceState != null
