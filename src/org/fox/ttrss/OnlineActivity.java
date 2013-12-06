@@ -528,6 +528,7 @@ public class OnlineActivity extends CommonActivity {
 		}
 	}
 	*/
+	/*
 	private void openUnlockUrl() {
 		try {
 			Intent intent = new Intent(Intent.ACTION_VIEW, 
@@ -544,7 +545,7 @@ public class OnlineActivity extends CommonActivity {
 			}
 		}
 	}
-	
+	*/
 	@Override
 	public boolean onContextItemSelected(android.view.MenuItem item) {
 		/* AdapterContextMenuInfo info = (AdapterContextMenuInfo) item
@@ -716,11 +717,13 @@ public class OnlineActivity extends CommonActivity {
 				}
 			}
 			return true;
+			/*
 		case R.id.donate:
 			if (true) {
 				openUnlockUrl();
 			}
 			return true;
+			*/
 		case R.id.logout:
 			logout();
 			return true;
@@ -1261,13 +1264,11 @@ public class OnlineActivity extends CommonActivity {
 			for (PackageInfo p : pkgs) {
 				if ("org.fox.ttrss.key".equals(p.packageName)) {
 					Log.d(TAG, "license apk found");
-					menu.findItem(R.id.donate).setVisible(false);
+				//	menu.findItem(R.id.donate).setVisible(false);
 					break;
 				}
 			}
-		} else {
-			menu.findItem(R.id.donate).setVisible(false);
-		}
+		} 
 		
 		return true;
 	}
